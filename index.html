@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eman Mohamed — Media Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
+  --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;
+  --radius-sm:.375rem;--radius-md:.5rem;--radius-lg:.75rem;
+  --radius-xl:1rem;--radius-full:9999px;
+  --font-display:'Instrument Serif',Georgia,serif;
+  --font-body:'Inter',sans-serif;
+  --transition:180ms cubic-bezier(0.16,1,0.3,1);
+  --color-bg:#0e0e0f;--color-surface:#161618;--color-surface-2:#1c1c1f;
+  --color-surface-offset:#222226;--color-border:#2e2e34;
+  --color-text:#e8e8ec;--color-text-muted:#8888a0;--color-text-faint:#44445a;
+  --color-primary:#a78bfa;--color-primary-hover:#8b5cf6;
+  --color-tiktok:#ff2d55;--color-instagram:#e1306c;
+  --color-youtube:#ff0000;--color-facebook:#1877f2;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.4);--shadow-md:0 4px 16px rgba(0,0,0,.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;}
+body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);line-height:1.6;}
+.hero{position:relative;padding:var(--space-16) var(--space-6) var(--space-12);text-align:center;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(167,139,250,.12) 0%,transparent 70%);pointer-events:none;}
+.hero-badge{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-1) var(--space-4);border:1px solid var(--color-primary);border-radius:var(--radius-full);font-size:var(--text-xs);color:var(--color-primary);letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--space-6);}
+.hero h1{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:400;line-height:1.1;margin-bottom:var(--space-3);}
+.hero h1 em{font-style:italic;color:var(--color-primary);}
+.hero p{color:var(--color-text-muted);font-size:var(--text-sm);max-width:480px;margin:0 auto var(--space-8);}
+.hero-links{display:flex;justify-content:center;flex-wrap:wrap;gap:var(--space-3);}
+.platform-link{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);font-size:var(--text-xs);font-weight:500;text-decoration:none;border:1px solid var(--color-border);color:var(--color-text-muted);transition:all var(--transition);}
+.platform-link:hover{border-color:var(--color-primary);color:var(--color-text);}
+.dot{width:8px;height:8px;border-radius:50%;}
+.dot-tt{background:var(--color-tiktok);}.dot-ig{background:var(--color-instagram);}.dot-yt{background:var(--color-youtube);}.dot-fb{background:var(--color-facebook);}
+.container{max-width:1000px;margin:0 auto;padding:0 var(--space-6);}
+.section{padding:var(--space-12) 0;border-top:1px solid var(--color-border);}
+.section-label{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.1em;color:var(--color-text-faint);margin-bottom:var(--space-6);display:flex;align-items:center;gap:var(--space-3);}
+.section-label::after{content:'';flex:1;height:1px;background:var(--color-border);}
+.platform-header{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-6);}
+.platform-icon{width:36px;height:36px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.platform-icon.tt{background:rgba(255,45,85,.15);}.platform-icon.ig{background:rgba(225,48,108,.15);}.platform-icon.yt{background:rgba(255,0,0,.15);}.platform-icon.fb{background:rgba(24,119,242,.15);}
+.platform-name{font-size:var(--text-lg);font-weight:600;}
+.platform-followers{font-size:var(--text-sm);color:var(--color-text-muted);}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--space-3);margin-bottom:var(--space-8);}
+.kpi-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-5);}
+.kpi-label{font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:var(--space-1);}
+.kpi-value{font-size:var(--text-xl);font-weight:700;line-height:1;letter-spacing:-.02em;}
+.kpi-value.accent{color:var(--color-primary);}
+.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);}
+@media(max-width:600px){.demo-grid{grid-template-columns:1fr;}.kpi-grid{grid-template-columns:repeat(2,1fr);}.hero{padding:var(--space-10) var(--space-4) var(--space-8);}}
+.demo-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-5);}
+.demo-title{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted);margin-bottom:var(--space-4);}
+.bar-row{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-3);}
+.bar-label{font-size:var(--text-xs);color:var(--color-text-muted);width:90px;flex-shrink:0;}
+.bar-track{flex:1;height:6px;background:var(--color-surface-offset);border-radius:var(--radius-full);overflow:hidden;}
+.bar-fill{height:100%;border-radius:var(--radius-full);}
+.bar-fill.tt{background:var(--color-tiktok);}.bar-fill.ig{background:var(--color-instagram);}.bar-fill.yt{background:var(--color-youtube);}.bar-fill.fb{background:var(--color-facebook);}
+.bar-pct{font-size:var(--text-xs);color:var(--color-text-muted);width:36px;text-align:right;flex-shrink:0;}
+.gender-bar{height:10px;border-radius:var(--radius-full);overflow:hidden;display:flex;margin-bottom:var(--space-3);}
+.gender-male{background:#60a5fa;}.gender-female{background:#f472b6;}
+.gender-legend{display:flex;gap:var(--space-4);}
+.gender-item{display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);color:var(--color-text-muted);}
+.gender-dot{width:8px;height:8px;border-radius:50%;}
+.footer{padding:var(--space-10) var(--space-6);text-align:center;border-top:1px solid var(--color-border);}
+.footer p{font-size:var(--text-xs);color:var(--color-text-faint);}
+.footer a{color:var(--color-primary);text-decoration:none;}
+.updated{display:inline-flex;align-items:center;gap:var(--space-1);font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);}
+.updated::before{content:'';width:6px;height:6px;border-radius:50%;background:#4ade80;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.niche-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-8);}
+.tag{padding:var(--space-1) var(--space-3);border-radius:var(--radius-full);font-size:var(--text-xs);border:1px solid var(--color-border);color:var(--color-text-muted);}
+.platform-section{margin-bottom:var(--space-12);padding-bottom:var(--space-12);border-bottom:1px solid var(--color-border);}
+.platform-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">✦ Media Kit 2026</div>
+  <h1>Eman<br><em>Mohamed</em></h1>
+  <p>Arabic tech &amp; AI content creator — Egypt.<br>Helping millions discover smarter ways to use technology.</p>
+  <div class="updated">Updated May 2026 &middot; Last 28&ndash;30 days data</div>
+  <br>
+  <div class="hero-links">
+    <a class="platform-link" href="https://www.tiktok.com/@eman_mohamedyt" target="_blank" rel="noopener"><span class="dot dot-tt"></span> TikTok</a>
+    <a class="platform-link" href="https://www.instagram.com/eman.i.mohamed/" target="_blank" rel="noopener"><span class="dot dot-ig"></span> Instagram</a>
+    <a class="platform-link" href="https://www.youtube.com/@EmanMohamed" target="_blank" rel="noopener"><span class="dot dot-yt"></span> YouTube</a>
+    <a class="platform-link" href="https://www.facebook.com/EmanMohamed305" target="_blank" rel="noopener"><span class="dot dot-fb"></span> Facebook</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section" style="padding-top:var(--space-8);">
+    <div class="section-label">Content Niche</div>
+    <div class="niche-tags">
+      <span class="tag">📱 Tech &amp; Apps</span>
+      <span class="tag">🤖 Artificial Intelligence</span>
+      <span class="tag">💡 Digital Tips &amp; Tricks</span>
+      <span class="tag">📲 Social Media Secrets</span>
+      <span class="tag">🎯 Productivity</span>
+      <span class="tag">🌍 Arabic-speaking audience</span>
+    </div>
+  </div>
+
+  <!-- TIKTOK -->
+  <div class="section">
+    <div class="section-label">TikTok</div>
+    <div class="platform-section">
+      <div class="platform-header">
+        <div class="platform-icon tt">🎵</div>
+        <div>
+          <div class="platform-name">@eman_mohamedyt</div>
+          <div class="platform-followers">TikTok &middot; Last 30 days (Apr 4 &ndash; May 3)</div>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Total Viewers</div><div class="kpi-value accent">3.5M</div></div>
+        <div class="kpi-card"><div class="kpi-label">New Viewers</div><div class="kpi-value">2M</div></div>
+        <div class="kpi-card"><div class="kpi-label">Profile Visits</div><div class="kpi-value">10,172</div></div>
+        <div class="kpi-card"><div class="kpi-label">Link Taps</div><div class="kpi-value">827</div></div>
+      </div>
+      <div class="demo-card" style="margin-bottom:var(--space-4);">
+        <div class="demo-title">🔥 Top Videos (Last 30 days)</div>
+        <div class="bar-row"><div class="bar-label">Apr 28</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">31K</div></div>
+        <div class="bar-row"><div class="bar-label">Apr 7</div><div class="bar-track"><div class="bar-fill tt" style="width:84%"></div></div><div class="bar-pct">26K</div></div>
+        <div class="bar-row"><div class="bar-label">Apr 30</div><div class="bar-track"><div class="bar-fill tt" style="width:77%"></div></div><div class="bar-pct">24K</div></div>
+        <div class="bar-row"><div class="bar-label">Apr 16</div><div class="bar-track"><div class="bar-fill tt" style="width:71%"></div></div><div class="bar-pct">22K</div></div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <div class="demo-title">Gender Split (Viewers)</div>
+          <div class="gender-bar"><div class="gender-male" style="width:51%"></div><div class="gender-female" style="width:47%"></div></div>
+          <div class="gender-legend">
+            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 51%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 47%</div>
+          </div>
+        </div>
+        <div class="demo-card">
+          <div class="demo-title">Age (Viewers)</div>
+          <div class="bar-row"><div class="bar-label">18&ndash;24</div><div class="bar-track"><div class="bar-fill tt" style="width:87%"></div></div><div class="bar-pct">32.1%</div></div>
+          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">36.8%</div></div>
+          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill tt" style="width:49%"></div></div><div class="bar-pct">18.0%</div></div>
+          <div class="bar-row"><div class="bar-label">45&ndash;54</div><div class="bar-track"><div class="bar-fill tt" style="width:21%"></div></div><div class="bar-pct">7.8%</div></div>
+          <div class="bar-row"><div class="bar-label">55+</div><div class="bar-track"><div class="bar-fill tt" style="width:14%"></div></div><div class="bar-pct">5.3%</div></div>
+        </div>
+        <div class="demo-card" style="grid-column:span 2;">
+          <div class="demo-title">Top Countries (Viewers)</div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">55.4%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill tt" style="width:16%"></div></div><div class="bar-pct">9.1%</div></div>
+          <div class="bar-row"><div class="bar-label">🇩🇿 Algeria</div><div class="bar-track"><div class="bar-fill tt" style="width:16%"></div></div><div class="bar-pct">9.1%</div></div>
+          <div class="bar-row"><div class="bar-label">🇮🇶 Iraq</div><div class="bar-track"><div class="bar-fill tt" style="width:6%"></div></div><div class="bar-pct">3.6%</div></div>
+          <div class="bar-row"><div class="bar-label">🇾🇪 Yemen</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">3.1%</div></div>
+          <div class="bar-row"><div class="bar-label">🇺🇸 USA</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">2.9%</div></div>
+          <div class="bar-row"><div class="bar-label">🇲🇦 Morocco</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">2.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇱🇾 Libya</div><div class="bar-track"><div class="bar-fill tt" style="width:3%"></div></div><div class="bar-pct">1.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇹🇳 Tunisia</div><div class="bar-track"><div class="bar-fill tt" style="width:3%"></div></div><div class="bar-pct">1.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇦🇪 UAE</div><div class="bar-track"><div class="bar-fill tt" style="width:2%"></div></div><div class="bar-pct">1.5%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTAGRAM -->
+  <div class="section">
+    <div class="section-label">Instagram</div>
+    <div class="platform-section">
+      <div class="platform-header">
+        <div class="platform-icon ig">📸</div>
+        <div>
+          <div class="platform-name">@eman.i.mohamed</div>
+          <div class="platform-followers">311K Followers &middot; Apr 3 &ndash; May 3, 2026</div>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Reel Views</div><div class="kpi-value accent">864K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Unique Viewers</div><div class="kpi-value">500K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Likes</div><div class="kpi-value">16K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Shares</div><div class="kpi-value">19K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Saves</div><div class="kpi-value">18K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Comments</div><div class="kpi-value">950</div></div>
+        <div class="kpi-card"><div class="kpi-label">Reposts</div><div class="kpi-value">893</div></div>
+        <div class="kpi-card"><div class="kpi-label">Reels Published</div><div class="kpi-value">14</div></div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <div class="demo-title">Gender Split (Viewers)</div>
+          <div class="gender-bar"><div class="gender-male" style="width:36.8%"></div><div class="gender-female" style="width:63.2%"></div></div>
+          <div class="gender-legend">
+            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 36.8%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 63.2%</div>
+          </div>
+        </div>
+        <div class="demo-card">
+          <div class="demo-title">Top Age Ranges</div>
+          <div class="bar-row"><div class="bar-label">18&ndash;24</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="bar-pct">26.9%</div></div>
+          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill ig" style="width:94%"></div></div><div class="bar-pct">25.3%</div></div>
+          <div class="bar-row"><div class="bar-label">13&ndash;17</div><div class="bar-track"><div class="bar-fill ig" style="width:74%"></div></div><div class="bar-pct">20.0%</div></div>
+          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill ig" style="width:57%"></div></div><div class="bar-pct">15.4%</div></div>
+        </div>
+        <div class="demo-card" style="grid-column:span 2;">
+          <div class="demo-title">Top Countries</div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="bar-pct">37.7%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill ig" style="width:22%"></div></div><div class="bar-pct">8.5%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇾 Syria</div><div class="bar-track"><div class="bar-fill ig" style="width:21%"></div></div><div class="bar-pct">7.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇯🇴 Jordan</div><div class="bar-track"><div class="bar-fill ig" style="width:17%"></div></div><div class="bar-pct">6.6%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- YOUTUBE -->
+  <div class="section">
+    <div class="section-label">YouTube</div>
+    <div class="platform-section">
+      <div class="platform-header">
+        <div class="platform-icon yt">▶️</div>
+        <div>
+          <div class="platform-name">@EmanMohamed</div>
+          <div class="platform-followers">YouTube &middot; Last 28 days</div>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <div class="demo-title">Gender Split</div>
+          <div class="gender-bar"><div class="gender-male" style="width:76.3%"></div><div class="gender-female" style="width:23.6%"></div></div>
+          <div class="gender-legend">
+            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 76.3%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 23.6%</div>
+          </div>
+        </div>
+        <div class="demo-card">
+          <div class="demo-title">Age (Views)</div>
+          <div class="bar-row"><div class="bar-label">13&ndash;17</div><div class="bar-track"><div class="bar-fill yt" style="width:16%"></div></div><div class="bar-pct">6.4%</div></div>
+          <div class="bar-row"><div class="bar-label">18&ndash;24</div><div class="bar-track"><div class="bar-fill yt" style="width:51%"></div></div><div class="bar-pct">20.2%</div></div>
+          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill yt" style="width:100%"></div></div><div class="bar-pct">39.3%</div></div>
+          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill yt" style="width:56%"></div></div><div class="bar-pct">22.1%</div></div>
+          <div class="bar-row"><div class="bar-label">45&ndash;54</div><div class="bar-track"><div class="bar-fill yt" style="width:24%"></div></div><div class="bar-pct">9.6%</div></div>
+          <div class="bar-row"><div class="bar-label">55&ndash;64</div><div class="bar-track"><div class="bar-fill yt" style="width:6%"></div></div><div class="bar-pct">2.4%</div></div>
+        </div>
+        <div class="demo-card" style="grid-column:span 2;">
+          <div class="demo-title">Top Countries (Geography)</div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill yt" style="width:100%"></div></div><div class="bar-pct">42.4%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill yt" style="width:13%"></div></div><div class="bar-pct">5.6%</div></div>
+          <div class="bar-row"><div class="bar-label">🇮🇶 Iraq</div><div class="bar-track"><div class="bar-fill yt" style="width:13%"></div></div><div class="bar-pct">5.4%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FACEBOOK -->
+  <div class="section">
+    <div class="section-label">Facebook</div>
+    <div class="platform-section">
+      <div class="platform-header">
+        <div class="platform-icon fb">📘</div>
+        <div>
+          <div class="platform-name">EmanMohamed305</div>
+          <div class="platform-followers">Facebook &middot; Last 28 days</div>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <div class="demo-title">Gender Split (Followers)</div>
+          <div class="gender-bar"><div class="gender-male" style="width:70%"></div><div class="gender-female" style="width:30%"></div></div>
+          <div class="gender-legend">
+            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 70%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 30%</div>
+          </div>
+        </div>
+        <div class="demo-card">
+          <div class="demo-title">Age (Followers)</div>
+          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill fb" style="width:100%"></div></div><div class="bar-pct">37.7%</div></div>
+          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill fb" style="width:88%"></div></div><div class="bar-pct">33.2%</div></div>
+          <div class="bar-row"><div class="bar-label">45&ndash;54</div><div class="bar-track"><div class="bar-fill fb" style="width:52%"></div></div><div class="bar-pct">19.6%</div></div>
+        </div>
+        <div class="demo-card" style="grid-column:span 2;">
+          <div class="demo-title">Top Countries (Followers)</div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill fb" style="width:100%"></div></div><div class="bar-pct">66.0%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill fb" style="width:11%"></div></div><div class="bar-pct">7.1%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇩 Sudan</div><div class="bar-track"><div class="bar-fill fb" style="width:7%"></div></div><div class="bar-pct">4.8%</div></div>
+          <div class="bar-row"><div class="bar-label">Other</div><div class="bar-track"><div class="bar-fill fb" style="width:33%"></div></div><div class="bar-pct">22.1%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>For collaboration inquiries: <a href="mailto:emanmohamedyt9@gmail.com">emanmohamedyt9@gmail.com</a></p>
+  <p style="margin-top:var(--space-2);">Data sourced from platform analytics &middot; Updated May 2026</p>
+</div>
+
+</body>
+</html>
