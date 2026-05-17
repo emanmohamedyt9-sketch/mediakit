@@ -59,6 +59,7 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
 .kpi-label{font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:var(--space-1);}
 .kpi-value{font-size:var(--text-xl);font-weight:700;line-height:1;letter-spacing:-.02em;}
 .kpi-value.accent{color:var(--color-primary);}
+.kpi-sub{font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-1);}
 .demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);}
 @media(max-width:600px){.demo-grid{grid-template-columns:1fr;}.kpi-grid{grid-template-columns:repeat(2,1fr);}.hero{padding:var(--space-10) var(--space-4) var(--space-8);}}
 .demo-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-5);}
@@ -84,6 +85,7 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
 .tag{padding:var(--space-1) var(--space-3);border-radius:var(--radius-full);font-size:var(--text-xs);border:1px solid var(--color-border);color:var(--color-text-muted);}
 .platform-section{margin-bottom:var(--space-12);padding-bottom:var(--space-12);border-bottom:1px solid var(--color-border);}
 .platform-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.insight-pill{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-1) var(--space-3);border-radius:var(--radius-full);font-size:var(--text-xs);background:var(--color-surface-offset);color:var(--color-text-muted);margin-bottom:var(--space-4);}
 </style>
 </head>
 <body>
@@ -92,7 +94,7 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
   <div class="hero-badge">✦ Media Kit 2026</div>
   <h1>Eman<br><em>Mohamed</em></h1>
   <p>Arabic tech &amp; AI content creator — Egypt.<br>Helping millions discover smarter ways to use technology.</p>
-  <div class="updated">Updated May 2026 &middot; Last 28&ndash;30 days data</div>
+  <div class="updated">Updated May 2026 &middot; Data: Apr 17 &ndash; May 16</div>
   <br>
   <div class="hero-links">
     <a class="platform-link" href="https://www.tiktok.com/@eman_mohamedyt" target="_blank" rel="noopener"><span class="dot dot-tt"></span> TikTok</a>
@@ -124,51 +126,36 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
         <div class="platform-icon tt">🎵</div>
         <div>
           <div class="platform-name">@eman_mohamedyt</div>
-          <div class="platform-followers">TikTok &middot; Last 30 days (Apr 4 &ndash; May 3)</div>
+          <div class="platform-followers">858.5K Followers &middot; Last 28 days (Apr 18 &ndash; May 15)</div>
         </div>
       </div>
+
+      <div class="insight-pill">🔥 Most active: Saturday 12am – 1am &nbsp;·&nbsp; For You traffic: 56.2%</div>
+
       <div class="kpi-grid">
-        <div class="kpi-card"><div class="kpi-label">Total Viewers</div><div class="kpi-value accent">3.5M</div></div>
-        <div class="kpi-card"><div class="kpi-label">New Viewers</div><div class="kpi-value">2M</div></div>
-        <div class="kpi-card"><div class="kpi-label">Profile Visits</div><div class="kpi-value">10,172</div></div>
-        <div class="kpi-card"><div class="kpi-label">Link Taps</div><div class="kpi-value">827</div></div>
+        <div class="kpi-card"><div class="kpi-label">Post Views</div><div class="kpi-value accent">5M</div></div>
+        <div class="kpi-card"><div class="kpi-label">Profile Views</div><div class="kpi-value">46K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Likes</div><div class="kpi-value">107K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Shares</div><div class="kpi-value">35K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Comments</div><div class="kpi-value">1,190</div></div>
       </div>
-      <div class="demo-card" style="margin-bottom:var(--space-4);">
-        <div class="demo-title">🔥 Top Videos (Last 30 days)</div>
-        <div class="bar-row"><div class="bar-label">Apr 28</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">31K</div></div>
-        <div class="bar-row"><div class="bar-label">Apr 7</div><div class="bar-track"><div class="bar-fill tt" style="width:84%"></div></div><div class="bar-pct">26K</div></div>
-        <div class="bar-row"><div class="bar-label">Apr 30</div><div class="bar-track"><div class="bar-fill tt" style="width:77%"></div></div><div class="bar-pct">24K</div></div>
-        <div class="bar-row"><div class="bar-label">Apr 16</div><div class="bar-track"><div class="bar-fill tt" style="width:71%"></div></div><div class="bar-pct">22K</div></div>
-      </div>
+
       <div class="demo-grid">
         <div class="demo-card">
-          <div class="demo-title">Gender Split (Viewers)</div>
-          <div class="gender-bar"><div class="gender-male" style="width:51%"></div><div class="gender-female" style="width:47%"></div></div>
-          <div class="gender-legend">
-            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 51%</div>
-            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 47%</div>
-          </div>
+          <div class="demo-title">Age (Viewers)</div>
+          <div class="bar-row"><div class="bar-label">18–24</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">38.5%</div></div>
+          <div class="bar-row"><div class="bar-label">25–34</div><div class="bar-track"><div class="bar-fill tt" style="width:92%"></div></div><div class="bar-pct">35.5%</div></div>
+          <div class="bar-row"><div class="bar-label">35–44</div><div class="bar-track"><div class="bar-fill tt" style="width:38%"></div></div><div class="bar-pct">14.8%</div></div>
+          <div class="bar-row"><div class="bar-label">45–54</div><div class="bar-track"><div class="bar-fill tt" style="width:17%"></div></div><div class="bar-pct">6.4%</div></div>
+          <div class="bar-row"><div class="bar-label">55+</div><div class="bar-track"><div class="bar-fill tt" style="width:12%"></div></div><div class="bar-pct">4.8%</div></div>
         </div>
         <div class="demo-card">
-          <div class="demo-title">Age (Viewers)</div>
-          <div class="bar-row"><div class="bar-label">18&ndash;24</div><div class="bar-track"><div class="bar-fill tt" style="width:87%"></div></div><div class="bar-pct">32.1%</div></div>
-          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">36.8%</div></div>
-          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill tt" style="width:49%"></div></div><div class="bar-pct">18.0%</div></div>
-          <div class="bar-row"><div class="bar-label">45&ndash;54</div><div class="bar-track"><div class="bar-fill tt" style="width:21%"></div></div><div class="bar-pct">7.8%</div></div>
-          <div class="bar-row"><div class="bar-label">55+</div><div class="bar-track"><div class="bar-fill tt" style="width:14%"></div></div><div class="bar-pct">5.3%</div></div>
-        </div>
-        <div class="demo-card" style="grid-column:span 2;">
           <div class="demo-title">Top Countries (Viewers)</div>
-          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">55.4%</div></div>
-          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill tt" style="width:16%"></div></div><div class="bar-pct">9.1%</div></div>
-          <div class="bar-row"><div class="bar-label">🇩🇿 Algeria</div><div class="bar-track"><div class="bar-fill tt" style="width:16%"></div></div><div class="bar-pct">9.1%</div></div>
-          <div class="bar-row"><div class="bar-label">🇮🇶 Iraq</div><div class="bar-track"><div class="bar-fill tt" style="width:6%"></div></div><div class="bar-pct">3.6%</div></div>
-          <div class="bar-row"><div class="bar-label">🇾🇪 Yemen</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">3.1%</div></div>
-          <div class="bar-row"><div class="bar-label">🇺🇸 USA</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">2.9%</div></div>
-          <div class="bar-row"><div class="bar-label">🇲🇦 Morocco</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">2.8%</div></div>
-          <div class="bar-row"><div class="bar-label">🇱🇾 Libya</div><div class="bar-track"><div class="bar-fill tt" style="width:3%"></div></div><div class="bar-pct">1.8%</div></div>
-          <div class="bar-row"><div class="bar-label">🇹🇳 Tunisia</div><div class="bar-track"><div class="bar-fill tt" style="width:3%"></div></div><div class="bar-pct">1.8%</div></div>
-          <div class="bar-row"><div class="bar-label">🇦🇪 UAE</div><div class="bar-track"><div class="bar-fill tt" style="width:2%"></div></div><div class="bar-pct">1.5%</div></div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill tt" style="width:100%"></div></div><div class="bar-pct">66.3%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill tt" style="width:13%"></div></div><div class="bar-pct">8.5%</div></div>
+          <div class="bar-row"><div class="bar-label">🇩🇿 Algeria</div><div class="bar-track"><div class="bar-fill tt" style="width:7%"></div></div><div class="bar-pct">4.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇮🇶 Iraq</div><div class="bar-track"><div class="bar-fill tt" style="width:5%"></div></div><div class="bar-pct">3.0%</div></div>
+          <div class="bar-row"><div class="bar-label">🇺🇸 USA</div><div class="bar-track"><div class="bar-fill tt" style="width:4%"></div></div><div class="bar-pct">2.4%</div></div>
         </div>
       </div>
     </div>
@@ -182,41 +169,42 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
         <div class="platform-icon ig">📸</div>
         <div>
           <div class="platform-name">@eman.i.mohamed</div>
-          <div class="platform-followers">311K Followers &middot; Apr 3 &ndash; May 3, 2026</div>
+          <div class="platform-followers">314K Followers &middot; Apr 17 &ndash; May 16, 2026</div>
         </div>
       </div>
       <div class="kpi-grid">
-        <div class="kpi-card"><div class="kpi-label">Reel Views</div><div class="kpi-value accent">864K</div></div>
-        <div class="kpi-card"><div class="kpi-label">Unique Viewers</div><div class="kpi-value">500K</div></div>
-        <div class="kpi-card"><div class="kpi-label">Likes</div><div class="kpi-value">16K</div></div>
-        <div class="kpi-card"><div class="kpi-label">Shares</div><div class="kpi-value">19K</div></div>
-        <div class="kpi-card"><div class="kpi-label">Saves</div><div class="kpi-value">18K</div></div>
-        <div class="kpi-card"><div class="kpi-label">Comments</div><div class="kpi-value">950</div></div>
-        <div class="kpi-card"><div class="kpi-label">Reposts</div><div class="kpi-value">893</div></div>
-        <div class="kpi-card"><div class="kpi-label">Reels Published</div><div class="kpi-value">14</div></div>
+        <div class="kpi-card"><div class="kpi-label">Total Views</div><div class="kpi-value accent">1.3M</div></div>
+        <div class="kpi-card"><div class="kpi-label">Total Interactions</div><div class="kpi-value">142K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Likes</div><div class="kpi-value">24K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Shares</div><div class="kpi-value">41K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Saves</div><div class="kpi-value">32K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Comments</div><div class="kpi-value">1,002</div></div>
+        <div class="kpi-card"><div class="kpi-label">Reposts</div><div class="kpi-value">1,528</div></div>
+        <div class="kpi-card"><div class="kpi-label">Profile Visits</div><div class="kpi-value">10,820</div></div>
+        <div class="kpi-card"><div class="kpi-label">Link Taps</div><div class="kpi-value">981</div></div>
       </div>
       <div class="demo-grid">
         <div class="demo-card">
           <div class="demo-title">Gender Split (Viewers)</div>
-          <div class="gender-bar"><div class="gender-male" style="width:36.8%"></div><div class="gender-female" style="width:63.2%"></div></div>
+          <div class="gender-bar"><div class="gender-male" style="width:28%"></div><div class="gender-female" style="width:72%"></div></div>
           <div class="gender-legend">
-            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 36.8%</div>
-            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 63.2%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 28%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 72%</div>
           </div>
         </div>
         <div class="demo-card">
           <div class="demo-title">Top Age Ranges</div>
-          <div class="bar-row"><div class="bar-label">18&ndash;24</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="bar-pct">26.9%</div></div>
-          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill ig" style="width:94%"></div></div><div class="bar-pct">25.3%</div></div>
-          <div class="bar-row"><div class="bar-label">13&ndash;17</div><div class="bar-track"><div class="bar-fill ig" style="width:74%"></div></div><div class="bar-pct">20.0%</div></div>
-          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill ig" style="width:57%"></div></div><div class="bar-pct">15.4%</div></div>
+          <div class="bar-row"><div class="bar-label">18–24</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="bar-pct">27.1%</div></div>
+          <div class="bar-row"><div class="bar-label">13–17</div><div class="bar-track"><div class="bar-fill ig" style="width:99%"></div></div><div class="bar-pct">27.0%</div></div>
+          <div class="bar-row"><div class="bar-label">25–34</div><div class="bar-track"><div class="bar-fill ig" style="width:85%"></div></div><div class="bar-pct">23.0%</div></div>
+          <div class="bar-row"><div class="bar-label">35–44</div><div class="bar-track"><div class="bar-fill ig" style="width:47%"></div></div><div class="bar-pct">12.8%</div></div>
         </div>
         <div class="demo-card" style="grid-column:span 2;">
           <div class="demo-title">Top Countries</div>
-          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="bar-pct">37.7%</div></div>
-          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill ig" style="width:22%"></div></div><div class="bar-pct">8.5%</div></div>
-          <div class="bar-row"><div class="bar-label">🇸🇾 Syria</div><div class="bar-track"><div class="bar-fill ig" style="width:21%"></div></div><div class="bar-pct">7.8%</div></div>
-          <div class="bar-row"><div class="bar-label">🇯🇴 Jordan</div><div class="bar-track"><div class="bar-fill ig" style="width:17%"></div></div><div class="bar-pct">6.6%</div></div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="bar-pct">30.9%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇾 Syria</div><div class="bar-track"><div class="bar-fill ig" style="width:29%"></div></div><div class="bar-pct">9.1%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill ig" style="width:22%"></div></div><div class="bar-pct">6.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇯🇴 Jordan</div><div class="bar-track"><div class="bar-fill ig" style="width:22%"></div></div><div class="bar-pct">6.8%</div></div>
         </div>
       </div>
     </div>
@@ -230,32 +218,40 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
         <div class="platform-icon yt">▶️</div>
         <div>
           <div class="platform-name">@EmanMohamed</div>
-          <div class="platform-followers">YouTube &middot; Last 28 days</div>
+          <div class="platform-followers">44.8K Subscribers &middot; Last 28 days (Apr 18 – May 15)</div>
         </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Monthly Audience</div><div class="kpi-value accent">38.1K</div></div>
+        <div class="kpi-card"><div class="kpi-label">New Subscribers</div><div class="kpi-value">+608</div></div>
+        <div class="kpi-card"><div class="kpi-label">Views</div><div class="kpi-value">64.6K</div></div>
+        <div class="kpi-card"><div class="kpi-label">Watch Time</div><div class="kpi-value">831h</div></div>
+        <div class="kpi-card"><div class="kpi-label">New Viewers</div><div class="kpi-value">91.8%</div></div>
       </div>
       <div class="demo-grid">
         <div class="demo-card">
-          <div class="demo-title">Gender Split</div>
-          <div class="gender-bar"><div class="gender-male" style="width:76.3%"></div><div class="gender-female" style="width:23.6%"></div></div>
+          <div class="demo-title">Gender Split (Views)</div>
+          <div class="gender-bar"><div class="gender-male" style="width:74.1%"></div><div class="gender-female" style="width:25.8%"></div></div>
           <div class="gender-legend">
-            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 76.3%</div>
-            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 23.6%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#60a5fa"></div> Male 74.1%</div>
+            <div class="gender-item"><div class="gender-dot" style="background:#f472b6"></div> Female 25.8%</div>
           </div>
         </div>
         <div class="demo-card">
-          <div class="demo-title">Age (Views)</div>
-          <div class="bar-row"><div class="bar-label">13&ndash;17</div><div class="bar-track"><div class="bar-fill yt" style="width:16%"></div></div><div class="bar-pct">6.4%</div></div>
-          <div class="bar-row"><div class="bar-label">18&ndash;24</div><div class="bar-track"><div class="bar-fill yt" style="width:51%"></div></div><div class="bar-pct">20.2%</div></div>
-          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill yt" style="width:100%"></div></div><div class="bar-pct">39.3%</div></div>
-          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill yt" style="width:56%"></div></div><div class="bar-pct">22.1%</div></div>
-          <div class="bar-row"><div class="bar-label">45&ndash;54</div><div class="bar-track"><div class="bar-fill yt" style="width:24%"></div></div><div class="bar-pct">9.6%</div></div>
-          <div class="bar-row"><div class="bar-label">55&ndash;64</div><div class="bar-track"><div class="bar-fill yt" style="width:6%"></div></div><div class="bar-pct">2.4%</div></div>
+          <div class="demo-title">Age (Views — Last 28 days)</div>
+          <div class="bar-row"><div class="bar-label">13–17</div><div class="bar-track"><div class="bar-fill yt" style="width:20%"></div></div><div class="bar-pct">7.3%</div></div>
+          <div class="bar-row"><div class="bar-label">18–24</div><div class="bar-track"><div class="bar-fill yt" style="width:53%"></div></div><div class="bar-pct">19.4%</div></div>
+          <div class="bar-row"><div class="bar-label">25–34</div><div class="bar-track"><div class="bar-fill yt" style="width:100%"></div></div><div class="bar-pct">36.7%</div></div>
+          <div class="bar-row"><div class="bar-label">35–44</div><div class="bar-track"><div class="bar-fill yt" style="width:60%"></div></div><div class="bar-pct">22.0%</div></div>
+          <div class="bar-row"><div class="bar-label">45–54</div><div class="bar-track"><div class="bar-fill yt" style="width:31%"></div></div><div class="bar-pct">11.2%</div></div>
+          <div class="bar-row"><div class="bar-label">55–64</div><div class="bar-track"><div class="bar-fill yt" style="width:8%"></div></div><div class="bar-pct">2.8%</div></div>
+          <div class="bar-row"><div class="bar-label">65+</div><div class="bar-track"><div class="bar-fill yt" style="width:2%"></div></div><div class="bar-pct">0.6%</div></div>
         </div>
         <div class="demo-card" style="grid-column:span 2;">
-          <div class="demo-title">Top Countries (Geography)</div>
-          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill yt" style="width:100%"></div></div><div class="bar-pct">42.4%</div></div>
-          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill yt" style="width:13%"></div></div><div class="bar-pct">5.6%</div></div>
-          <div class="bar-row"><div class="bar-label">🇮🇶 Iraq</div><div class="bar-track"><div class="bar-fill yt" style="width:13%"></div></div><div class="bar-pct">5.4%</div></div>
+          <div class="demo-title">Top Countries (Geography — Views)</div>
+          <div class="bar-row"><div class="bar-label">🇪🇬 Egypt</div><div class="bar-track"><div class="bar-fill yt" style="width:100%"></div></div><div class="bar-pct">48.8%</div></div>
+          <div class="bar-row"><div class="bar-label">🇸🇦 S. Arabia</div><div class="bar-track"><div class="bar-fill yt" style="width:13%"></div></div><div class="bar-pct">6.2%</div></div>
+          <div class="bar-row"><div class="bar-label">🇩🇿 Algeria</div><div class="bar-track"><div class="bar-fill yt" style="width:11%"></div></div><div class="bar-pct">5.5%</div></div>
         </div>
       </div>
     </div>
@@ -269,8 +265,15 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
         <div class="platform-icon fb">📘</div>
         <div>
           <div class="platform-name">EmanMohamed305</div>
-          <div class="platform-followers">Facebook &middot; Last 28 days</div>
+          <div class="platform-followers">529K Followers &middot; Last 28 days</div>
         </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Total Views</div><div class="kpi-value accent">2.2M</div></div>
+        <div class="kpi-card"><div class="kpi-label">Unique Viewers</div><div class="kpi-value">1.1M</div></div>
+        <div class="kpi-card"><div class="kpi-label">Interactions</div><div class="kpi-value">33,451</div></div>
+        <div class="kpi-card"><div class="kpi-label">New Followers</div><div class="kpi-value">+9,746</div></div>
+        <div class="kpi-card"><div class="kpi-label">Est. Revenue</div><div class="kpi-value">$17.65</div></div>
       </div>
       <div class="demo-grid">
         <div class="demo-card">
@@ -283,9 +286,9 @@ body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);c
         </div>
         <div class="demo-card">
           <div class="demo-title">Age (Followers)</div>
-          <div class="bar-row"><div class="bar-label">25&ndash;34</div><div class="bar-track"><div class="bar-fill fb" style="width:100%"></div></div><div class="bar-pct">37.7%</div></div>
-          <div class="bar-row"><div class="bar-label">35&ndash;44</div><div class="bar-track"><div class="bar-fill fb" style="width:88%"></div></div><div class="bar-pct">33.2%</div></div>
-          <div class="bar-row"><div class="bar-label">45&ndash;54</div><div class="bar-track"><div class="bar-fill fb" style="width:52%"></div></div><div class="bar-pct">19.6%</div></div>
+          <div class="bar-row"><div class="bar-label">25–34</div><div class="bar-track"><div class="bar-fill fb" style="width:100%"></div></div><div class="bar-pct">37.7%</div></div>
+          <div class="bar-row"><div class="bar-label">35–44</div><div class="bar-track"><div class="bar-fill fb" style="width:88%"></div></div><div class="bar-pct">33.2%</div></div>
+          <div class="bar-row"><div class="bar-label">45–54</div><div class="bar-track"><div class="bar-fill fb" style="width:52%"></div></div><div class="bar-pct">19.6%</div></div>
         </div>
         <div class="demo-card" style="grid-column:span 2;">
           <div class="demo-title">Top Countries (Followers)</div>
